@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./postularme.css">
+    
+    <title>Postularme</title>
+
+</head>
+<body>
+    <main>
+    
+        <h1>FUTBOLEROS</h1><hr>
+        <h2><b>Para inscribirse complete el siguiente formulario:</b></h2>
+    
+        <label for="texto">Nombre</label>
+        <input type="nombre" name="Nombre" placeholder="Ingresa tu Nombre" required>
+        <br><br>
+
+        <label for="texto">Apellido</label>
+        <input type="nombre" name="Apellido" placeholder="Ingresa tu Apellido" required>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="nombre" name="email" placeholder="Ingresa tu email" required autofocus pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <br><br>
+
+        <label for="edad">Edad</label>
+        <input type="edad" name="Edad" placeholder="Ingresa tu Edad"  max="100">
+        <br><br>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" min="1950-01-01" max="2021-01/01" class type="formulario" required>
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <br><br>
+
+        <label for="password">Repita el Password</label>
+        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <br><br> 
+    </main>
+        
+    <div>
+        <textarea name="Comentarios" id="Comentarios" cols="30" rows="10">Dejanos tu consulta..</textarea>
+    </div>
+
+    <input type="checkbox" name="Aceptar" required>
+    <label for="Aceptar">Al inscribirte aceptas nuestras Condiciones</label>
+
+    <div>
+        <input type="submit" value="Enviar">
+        <br>
+            
+        <a href="../Jugadores/index.html">Jugadores</a>
+    </div>
+
+</body>
+</html>
